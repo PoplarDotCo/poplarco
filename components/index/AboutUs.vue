@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <section id="about-us">
     about us
-  </div>
+  </section>
 </template>
 
 <script>

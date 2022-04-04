@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <section id="contact-us">
     contact us
-  </div>
+  </section>
 </template>
 
 <script>

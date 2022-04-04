@@ -1,5 +1,5 @@
 <template>
-  <div class="join-our-team container">
+  <div id="join-our-team" class="container">
     <div class="row direction_column">
       <h2>Join Our Team</h2>
       <h4>Check back often for spots on our growing team!</h4>
@@ -13,7 +13,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.join-our-team {
+#join-our-team {
 
 
 }
