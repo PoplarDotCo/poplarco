@@ -1,3 +1,18 @@
 button {
   // Button styling will go here
 }
+
+a.button {
+  background-color: $colorMidLightGray;
+  border-radius: $borderRadius;
+  color: $black;
+
+  &:hover {
+    color: white;
+    background-color: $colorDarkGray;
+  }
+
+  &_sm {
+    padding: 15px 25px;
+  }
+}
