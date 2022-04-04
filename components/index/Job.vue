@@ -1,12 +1,19 @@
 <template>
-  <div>
+  <div class="job">
     single job card
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'home'
+}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.job {
+  background: $colorGrayShadow;
+  border-radius: $borderRadius;
+  padding: $cardPadding;
+}
 </style>

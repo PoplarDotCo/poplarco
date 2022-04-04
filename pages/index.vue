@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="index">
     <nav-top-nav></nav-top-nav>
     <index-hero></index-hero>
     <index-what-we-do></index-what-we-do>
@@ -11,7 +11,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+
+}
 </script>
 
 <style lang="scss">
