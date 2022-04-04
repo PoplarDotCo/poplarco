@@ -1,8 +1,8 @@
 <template>
   <div class="job">
     <h5>{{ title }}</h5>
-    <p>
-      <span>{{ type }}</span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<span>{{ location }}</span>
+    <p class="small-text">
+      <span>{{ type }}</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>{{ location }}</span>
     </p>
 
     <div class="desc">
@@ -15,6 +15,7 @@
       <div class="row direction_row">
         <a :href="linkedIn" class="button button_sm" target="_blank" v-if="linkedIn">LinkedIn</a>
         <a :href="angelList" class="button button_sm" target="_blank" v-if="angelList">Angel List</a>
+        <nuxt-link to="#contact-us" class="button button_sm" v-if="angelList">Contact Us</nuxt-link>
       </div>
     </div>
   </div>

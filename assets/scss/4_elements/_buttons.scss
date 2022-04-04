@@ -6,10 +6,17 @@ a.button {
   background-color: $colorMidLightGray;
   border-radius: $borderRadius;
   color: $black;
+  text-decoration: none;
 
   &:hover {
     color: white;
     background-color: $colorDarkGray;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $black;
+    text-decoration: none;
   }
 
   &_sm {

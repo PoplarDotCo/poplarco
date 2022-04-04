@@ -1,12 +1,12 @@
 <template>
   <div id="index">
     <top-nav></top-nav>
-    <hero></hero>
-    <what-we-do></what-we-do>
-    <about-us></about-us>
-    <contact-us></contact-us>
+<!--    <hero></hero>-->
+<!--    <what-we-do></what-we-do>-->
+<!--    <about-us></about-us>-->
+<!--    <contact-us></contact-us>-->
     <join-our-team></join-our-team>
-    <main-footer></main-footer>
+<!--    <main-footer></main-footer>-->
   </div>
 </template>
 
