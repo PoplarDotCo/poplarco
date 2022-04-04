@@ -1,0 +1,132 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+h1,
+.isH1 {
+  font-size: 5.06rem;
+  font-weight: $fontWeightSemiBold;
+  letter-spacing: 0.02rem;
+  line-height: 5.18rem;
+  margin-bottom: 30px;
+}
+
+h2,
+.isH2 {
+  font-size: 3.375rem;
+  letter-spacing: -0.09rem;
+  font-weight: $fontWeightLight;
+  line-height: 4rem;
+  margin-bottom: 20px;
+}
+
+h3,
+.isH3 {
+  font-size: 2.25rem;
+  font-weight: $fontWeightBold;
+  line-height: 3.25rem;
+  margin-bottom: 8px;
+}
+
+h4,
+.isH4 {
+  font-size: 1.5rem;
+  font-weight: $fontWeightRegular;
+  line-height: 2rem;
+  letter-spacing: 0.009rem;
+  margin-bottom: 12px;
+}
+
+h5,
+.isH5 {
+  font-size: 1.3rem;
+  font-weight: $fontWeightRegular;
+  line-height: 2.4rem;
+  margin-bottom: 11px;
+}
+
+h6,
+.isH6 {
+  font-size: 1.3rem;
+  font-weight: $fontWeightSemiBold;
+  letter-spacing: 0.009rem;
+  line-height: 1.7rem;
+  margin-bottom: 10px;
+}
+
+p,
+.body1 {
+  font-size: 1rem;
+  line-height: 1.63rem;
+  letter-spacing: 0.02rem;
+  font-weight: $fontWeightRegular;
+  margin-bottom: 14px;
+}
+
+.body2 {
+  font-size: .9rem;
+  font-weight: $fontWeightRegular;
+  line-height: 1.5rem;
+  letter-spacing: 0.009rem;
+  margin-bottom: 14px;
+}
+
+.body3 {
+  font-size: 0.625rem;
+  font-weight: $fontWeightRegular;
+  letter-spacing: 0.01157rem;
+}
+
+.subtitle1 {
+  font-size: 1rem;
+  font-weight: $fontWeightMedium;
+  line-height: 1.2rem;
+  letter-spacing: 0.003rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.subtitle2 {
+  font-size: 1.1666rem;
+  font-weight: $fontWeightRegular;
+  line-height: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.button-font {
+  font-size: .9rem;
+  font-weight: $fontWeightSemiBold;
+  line-height: 1.08333rem;
+  letter-spacing: 0.108rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.overline-font {
+  font-size: 0.6rem;
+  font-weight: $fontWeightMedium;
+  line-height: 1rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+a,
+a:visited {
+  color: $fontColorLink;
+  font-weight: $fontWeightMedium;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: $fontColorLinkHover;
+  transition: all 0.2s;
+}

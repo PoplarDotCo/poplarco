@@ -1,0 +1,250 @@
+nav {
+  @include flex(row, nowrap, space-between, center);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  ul, li {
+    list-style: none;
+    @include flex(row, nowrap, space-between, center);
+  }
+
+  ul:first-of-type {
+
+    a, a:visited {
+      position: relative;
+      color: $white;
+    }
+
+    a:hover {
+      color: $white;
+    }
+
+    li {
+
+      div:first-of-type {
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      p {
+        position: absolute;
+        font-size: 30px;
+        font-weight: $fontWeightMedium;
+      }
+
+      &.nav-sogning {
+        z-index: $zIndexTop;
+
+        .nav-sogning__container {
+          transition: .2s all;
+          background: $colorSogning;
+          width: 300px;
+          height: 180px;
+          top: -80px;
+          left: -50px;
+
+          p {
+            top: 80px;
+            left: 70px;
+          }
+
+          .point {
+            transition: .2s all;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 27px solid transparent;
+            border-top: 40px solid $colorSogning;
+            top: 162px;
+            right: 79px;
+          }
+
+        }
+
+        &:hover {
+
+          .nav-sogning__container {
+            background: $colorSogningHover;
+            transition: .2s all;
+
+            .point {
+              border-top: 40px solid $colorSogningHover;
+              transition: .2s all;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.nav-sociale {
+        z-index: $zIndexTopper;
+
+        .nav-sociale__container {
+          transition: .2s all;
+          background: $colorSociale;
+          width: 300px;
+          height: 180px;
+          top: -100px;
+          left: 170px;
+
+          p {
+            top: 101px;
+            left: 47px;
+          }
+
+          .point {
+            transition: .2s all;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 40px solid $colorSociale;
+            top: 169px;
+            right: 120px;
+          }
+
+        }
+
+        &:hover {
+
+          .nav-sociale__container {
+            background: $colorSocialeHover;
+            transition: .2s all;
+
+            .point {
+              border-top: 40px solid $colorSocialeHover;
+              transition: .2s all;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.nav-invitation {
+        z-index: $zIndexTop;
+
+        .nav-invitation__container {
+          transition: .2s all;
+          background: $colorInvitation;
+          width: 300px;
+          height: 180px;
+          top: -80px;
+          left: 407px;
+
+          p {
+            top: 80px;
+            left: 85px;
+          }
+
+          .point {
+            transition: .2s all;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 55px solid transparent;
+            border-right: 14px solid transparent;
+            border-top: 45px solid #276e60;
+            top: 162px;
+            right: 151px;
+          }
+
+        }
+
+        &:hover {
+
+          .nav-invitation__container {
+            background: $colorInvitationHover;
+            transition: .2s all;
+
+            .point {
+              border-top: 45px solid $colorInvitationHover;
+              transition: .2s all;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.nav-swips {
+        z-index: $zIndexTopper;
+
+        .nav-swips__container {
+          transition: .2s all;
+          background: $colorSwips;
+          width: 207px;
+          height: 180px;
+          top: -100px;
+          left: 657px;
+
+          p {
+            top: 101px;
+            left: 57px;
+          }
+
+          .point {
+            transition: .2s all;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 51px solid transparent;
+            border-top: 53px solid $colorSwips;
+            top: 153px;
+            right: 93px;
+          }
+
+        }
+
+        &:hover {
+
+          .nav-swips__container {
+            background: $colorSwipsHover;
+            transition: .2s all;
+
+            .point {
+              border-top: 53px solid $colorSwipsHover;
+              transition: .2s all;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  ul:last-of-type {
+    padding-top: 30px;
+
+    a, a:visited {
+      font-weight: $fontWeightRegular;
+    }
+
+    a:hover {
+      color: $fontColorLinkHover;
+    }
+
+    li {
+      padding: 0 20px;
+    }
+
+    li:first-of-type {
+      border-right: 1px solid $black;
+    }
+
+  }
+
+}

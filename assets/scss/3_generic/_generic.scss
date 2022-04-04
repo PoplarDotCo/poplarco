@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  @include box-size(100vw, 100vh);
+  font-family: $primaryFont;
+  color: $black;
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  font-weight: $fontWeightMedium;
+  overflow: hidden;
+}
+
+div#app {
+  background-color: $white;
+}
+
+details, summary {
+  width: 100%;
+}
