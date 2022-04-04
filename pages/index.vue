@@ -21,7 +21,7 @@ import MainFooter from "~/components/footer/MainFooter";
 
 export default {
   name: "Index",
-  components: {MainFooter, JoinOurTeam, ContactUs, AboutUs, WhatWeDo, Hero, TopNav}
+  components: { MainFooter, JoinOurTeam, ContactUs, AboutUs, WhatWeDo, Hero, TopNav }
 }
 </script>
 

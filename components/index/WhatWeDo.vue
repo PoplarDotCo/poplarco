@@ -1,7 +1,7 @@
 <template>
   <section id="what-we-do">
     what we do
-    <generic-card></generic-card>
+<!--    <generic-card></generic-card>-->
   </section>
 </template>
 

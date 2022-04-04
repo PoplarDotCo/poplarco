@@ -1,12 +1,23 @@
 <template>
   <div class="job">
-    single job card
+    <h5>{{ jobTitle }}</h5>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Job'
+  name: 'Job',
+  props: {
+    job: {
+      type: Object,
+      required: true,
+    }
+  },
+  computed: {
+    jobTitle() {
+      return this.job && this.job && this.job.job_title;
+    }
+  }
 }
 </script>
 
@@ -15,5 +26,6 @@ export default {
   background: $colorGrayShadow;
   border-radius: $borderRadius;
   padding: $cardPadding;
+  margin: 30px 0;
 }
 </style>
