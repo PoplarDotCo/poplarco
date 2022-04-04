@@ -34,11 +34,16 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // https://github.com/storyblok/storyblok-nuxt
+    [
+      "@storyblok/nuxt/module",
+      { accessToken: "76Rkcs9ACYXy1OunSO1U6gtt" }
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
   ],
 
   styleResources: {

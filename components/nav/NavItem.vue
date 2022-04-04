@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: "NavItem",
   props: {
     item: {
       type: Array,

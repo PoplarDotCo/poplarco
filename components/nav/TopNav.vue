@@ -2,7 +2,7 @@
   <nav>
     <div class="container">
       <div class="row direction_row">
-
+        top nav
       </div>
     </div>
   </nav>
@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: "TopNav",
   data () {
     return {
       navItems: [
