@@ -30,7 +30,12 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+      { path: '~/components' },
+      { path: '~/components/index' }, // allows <Hero /> instead of <IndexHero />
+      { path: '~/components/footer' },
+      { path: '~/components/nav' },
+    ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -61,6 +66,5 @@ export default {
       }
     }
   },
-
 
 }

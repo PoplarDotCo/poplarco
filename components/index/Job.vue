@@ -26,7 +26,6 @@ export default {
   name: 'Job',
   props: {
     job: {
-      type: Object,
       required: true,
     }
   },
