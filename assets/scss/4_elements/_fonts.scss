@@ -11,10 +11,10 @@ h6 {
 
 h1,
 .isH1 {
-  font-size: 5.06rem;
+  font-size: 4.06rem;
   font-weight: $fontWeightSemiBold;
   letter-spacing: 0.02rem;
-  line-height: 5.18rem;
+  line-height: 4.20rem;
   margin-bottom: 30px;
 }
 
@@ -134,4 +134,42 @@ a:hover {
 .small-text {
   font-size: .8rem;
   line-height: 1rem;
+}
+
+
+@include breakpoint(xs-down) {
+  h1,
+  .isH1 {
+    font-size: 3.06rem;
+    font-weight: $fontWeightSemiBold;
+    letter-spacing: 0.02rem;
+    line-height: 3.20rem;
+    margin-bottom: 20px;
+  }
+
+  h2,
+  .isH2 {
+    font-size: 2.55rem;
+    letter-spacing: -0.09rem;
+    font-weight: $fontWeightBold;
+    line-height: 3rem;
+    margin-bottom: 20px;
+  }
+
+  h3,
+  .isH3 {
+    font-size: 2rem;
+    font-weight: $fontWeightBold;
+    line-height: 3rem;
+    margin-bottom: 8px;
+  }
+
+  h4,
+  .isH4 {
+    font-size: 1.3rem;
+    font-weight: $fontWeightRegular;
+    line-height: 1.7rem;
+    letter-spacing: 0.009rem;
+    margin-bottom: 12px;
+  }
 }
