@@ -9,7 +9,7 @@
         <div class="right-hero">
           <div class="content">
             <h1>What are we <span class="desktop-breakpoint"></span>leaving behind?</h1>
-            <h4>We make it easy to clean up the mess we made</h4>
+            <p class="isH4">We make it easy to clean up the mess we made</p>
             <a href="#contact-us" class="button button_lg">Request More Info</a>
           </div>
         </div>

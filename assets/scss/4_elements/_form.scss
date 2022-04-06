@@ -1,76 +1,76 @@
 fieldset {
   border: none;
 }
-
-input[type='text'],
-input[type='number'],
-input[type='date'] {
-  min-width: 245px;
-}
-
-input[type='text'] {
-
-  width: 100%;
-
-  outline: none;
-  border: none;
-  border-bottom: 2px solid black;
-  margin: 0;
-
-  color: $black;
-
-  padding: 9px 15px;
-
-  font-size: 0.8125rem;
-  letter-spacing: 0.25px;
-  text-align: left;
-  line-height: 1.5;
-
-  background: $white;
-
-  transition: all 0.2s;
-
-  &::placeholder {
-    color: $colorDarkGray;
-  }
-
-  &:active,
-  &:focus,
-  &:read-only {
-    //
-  }
-
-  &:read-only {
-    color: $colorMidLightGray;
-
-    &::placeholder {
-      color: $colorMidLightGray;
-    }
-  }
-}
-
-input[type='number'] {
-
-  border: none;
-  border-bottom: 2px solid black;
-
-  padding: 11px;
-  // hide spin buttons firefox
-  -moz-appearance: textfield;
-
-}
-
-// hide spin buttons chrome, safari, edge, opera
-input::webkit-outer-spin-button,
-input::webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-
-input[type='date'] {
-  border: none;
-  border-bottom: 2px solid black;
-  padding: 10px;
-}
-
+//
+//input[type='text'],
+//input[type='number'],
+//input[type='date'] {
+//  min-width: 245px;
+//}
+//
+//input[type='text'] {
+//
+//  width: 100%;
+//
+//  outline: none;
+//  border: none;
+//  border-bottom: 2px solid black;
+//  margin: 0;
+//
+//  color: $black;
+//
+//  padding: 9px 15px;
+//
+//  font-size: 0.8125rem;
+//  letter-spacing: 0.25px;
+//  text-align: left;
+//  line-height: 1.5;
+//
+//  background: $white;
+//
+//  transition: all 0.2s;
+//
+//  &::placeholder {
+//    color: $colorDarkGray;
+//  }
+//
+//  &:active,
+//  &:focus,
+//  &:read-only {
+//    //
+//  }
+//
+//  &:read-only {
+//    color: $colorMidLightGray;
+//
+//    &::placeholder {
+//      color: $colorMidLightGray;
+//    }
+//  }
+//}
+//
+//input[type='number'] {
+//
+//  border: none;
+//  border-bottom: 2px solid black;
+//
+//  padding: 11px;
+//  // hide spin buttons firefox
+//  -moz-appearance: textfield;
+//
+//}
+//
+//// hide spin buttons chrome, safari, edge, opera
+//input::webkit-outer-spin-button,
+//input::webkit-inner-spin-button {
+//  -webkit-appearance: none;
+//  margin: 0;
+//}
+//
+//
+//input[type='date'] {
+//  border: none;
+//  border-bottom: 2px solid black;
+//  padding: 10px;
+//}
+//

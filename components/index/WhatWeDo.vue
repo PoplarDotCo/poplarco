@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row direction_column">
         <h2>What we do</h2>
-        <h4>Poplar aims to be your one stop shop for sustainable waste disposal</h4>
+        <p class="isH4">Poplar aims to be your one stop shop for sustainable waste disposal</p>
       </div>
       <div class="row direction_row cards">
         <GenericCard flex="2">
