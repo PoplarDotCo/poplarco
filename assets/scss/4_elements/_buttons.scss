@@ -1,3 +1,37 @@
 button {
   // Button styling will go here
 }
+
+button,
+.button,
+.button:visited,
+.button:focus,
+.button:active {
+  cursor: pointer;
+  display: inline-block;
+  background: $colorPrimary02;
+  color: $black;
+  border: $colorPrimary02;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 25px 35px;
+  transition: $transitionIn;
+  opacity: 1;
+  border-radius: $borderRadius;
+
+  &:hover {
+    background: $colorPrimary04;
+    border: $colorPrimary04;
+    color: $white;
+    opacity: .75;
+  }
+}
+
+.button_sm {
+  padding: 15px 25px;
+}
+
+.button_lg {
+  padding: 25px 35px;
+}
