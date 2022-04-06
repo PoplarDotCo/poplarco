@@ -3,6 +3,7 @@
     <div class="container">
       <div class="row direction_row">
         <div class="left-hero">
+          <div class="image"></div>
           <img src="~/assets/img/kids-in-trash.png" alt="">
         </div>
         <div class="right-hero">
