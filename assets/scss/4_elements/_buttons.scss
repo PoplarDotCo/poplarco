@@ -28,10 +28,27 @@ button,
   }
 }
 
-.button_sm {
-  padding: 15px 25px;
-}
+.button {
 
-.button_lg {
-  padding: 25px 35px;
+  &_sm {
+    padding: 15px 25px;
+  }
+
+  &_lg {
+    padding: 25px 35px;
+  }
+
+  &_dark,
+  &_dark:visited,
+  &_dark:active,
+  &_dark:focus {
+    background: $colorPrimary03;
+    border: $colorPrimary03;
+  }
+
+  &_dark:hover {
+    background: $colorPrimary04;
+    border: $colorPrimary04;
+  }
+
 }

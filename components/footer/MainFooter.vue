@@ -1,7 +1,7 @@
 <template>
-  <div>
-    footer
-  </div>
+  <section id="footer">
+
+  </section>
 </template>
 
 <script>
@@ -11,4 +11,7 @@ export default {
 </script>
 
 <style lang="scss">
+#footer {
+  background: $colorMidGray;
+}
 </style>
