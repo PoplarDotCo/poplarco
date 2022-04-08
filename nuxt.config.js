@@ -49,6 +49,21 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/style-resources',
+    [
+      'nuxt-mail', {
+          message: {
+            to: 'mgaribov@poplar.co'
+          },
+          smtp: {
+            host: 'smtp.mailtrap.io',
+            port: 2525,
+            auth: {
+              user: 'username',
+              pass: 'password'
+            }
+          }
+       }
+    ]
   ],
 
   styleResources: {

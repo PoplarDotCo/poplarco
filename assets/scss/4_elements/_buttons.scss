@@ -31,11 +31,17 @@ button,
 
 .button {
 
-  &_sm {
+  &_sm,
+  &_sm:active,
+  &_sm:focus,
+  &_sm:visited {
     padding: 15px 25px;
   }
 
-  &_lg {
+  &_lg,
+  &_lg:active,
+  &_lg:focus,
+  &_lg:visited {
     padding: 25px 35px;
   }
 
