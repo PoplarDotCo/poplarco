@@ -8,8 +8,8 @@
         </div>
         <div class="right">
           <p class="bold">Get In Touch</p>
-          <p><a href="#contact-us">Contact Us</a></p>
-          <p>(201) 801 - 7789</p>
+          <p><a href="mailto:contact@poplar.co">contact@poplar.co</a></p>
+          <p>(240)-801-7789</p>
         </div>
       </div>
     </div>
