@@ -42,10 +42,26 @@ export default {
     padding: 50px;
   }
 
-  @include breakpoint(xxs-down) {
+}
+
+@include breakpoint(xxs-down) {
+
+  #hero {
+    padding: 0;
 
     .direction_row {
       flex-direction: column;
+
+      .left-hero {
+        height: 300px;
+        width: 100%;
+        background-position: center;
+      }
+
+      .right-hero {
+        width: 100%;
+      }
+
     }
 
   }
