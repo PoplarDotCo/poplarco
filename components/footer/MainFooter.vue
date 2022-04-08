@@ -9,7 +9,6 @@
         <div class="right">
           <p class="bold">Get In Touch</p>
           <p><a href="mailto:contact@poplar.co">contact@poplar.co</a></p>
-          <p>(240)-801-7789</p>
         </div>
       </div>
     </div>
