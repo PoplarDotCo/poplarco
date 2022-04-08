@@ -19,6 +19,7 @@ button,
   transition: $transitionIn;
   opacity: 1;
   border-radius: $borderRadius;
+  text-align: center;
 
   &:hover {
     background: $colorPrimary04;

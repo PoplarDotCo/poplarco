@@ -71,5 +71,13 @@ export default {
     margin: 20px 30px 0 0;
   }
 
+  @media screen and (max-width: 640px) {
+
+    .direction_row {
+      flex-direction: column;
+    }
+
+  }
+
 }
 </style>
