@@ -47,5 +47,21 @@ export default {
 
   }
 
+  @include breakpoint(xs-down) {
+
+    .direction_row {
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+      padding-top: 30px;
+
+      .what-we-do__spacer {
+        margin-top: 30px;
+      }
+
+    }
+
+  }
+
 }
 </style>
