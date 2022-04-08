@@ -39,7 +39,17 @@ export default {
   methods: {
     toggleNav() {
       this.navClosed = !this.navClosed;
-    }
+      this.freezeUnfreezeBody();
+    },
+    freezeUnfreezeBody() {
+      if(this.navClosed) {
+        document.getElementById('poplar').remove('no-scroll');
+      }
+
+      if (!this.navClosed) {
+        document.getElementById('poplar').add('no-scroll');
+      }
+    },
   }
 }
 </script>
@@ -175,4 +185,10 @@ nav {
 
 }
 
+</style>
+
+<style>
+.no-scroll {
+  overflow: hidden;
+}
 </style>

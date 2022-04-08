@@ -60,6 +60,7 @@ export default {
 
       .right-hero {
         width: 100%;
+        padding: 20px;
       }
 
     }
