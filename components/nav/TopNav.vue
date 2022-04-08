@@ -120,7 +120,7 @@ nav {
 
     }
 
-    @include breakpoint(xs-up) {
+    @include breakpoint(sm-up) {
 
       display: none;
 
