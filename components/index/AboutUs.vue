@@ -30,8 +30,8 @@ export default {
   width: 100%;
 
   .div-left {
-
     flex: 2;
+    padding-right: 30px;
 
     .content {
       max-width: 600px;
@@ -51,6 +51,10 @@ export default {
 
     .direction_row {
       flex-direction: column-reverse;
+
+      .div-left {
+        padding: 0;
+      }
 
       .div-right {
         flex: auto;

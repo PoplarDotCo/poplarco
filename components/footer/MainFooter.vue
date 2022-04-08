@@ -59,5 +59,19 @@ export default {
       text-decoration: underline;
     }
   }
+
+  @media screen and (max-width: 640px) {
+
+    .direction_row {
+      flex-direction: column;
+
+      .right {
+        margin-left: 8px;
+      }
+
+    }
+
+  }
+
 }
 </style>
