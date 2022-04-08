@@ -19,13 +19,9 @@
 <script>
 export default {
   name: 'MainFooter',
-  props: {},
-  method: {
+  computed: {
     getYear () {
-      console.log('test');
-      // const date = new Date();
-      // console.log(date.getFullYear());
-      // return date.getFullYear();
+      return new Date().getFullYear();
     }
   }
 }
