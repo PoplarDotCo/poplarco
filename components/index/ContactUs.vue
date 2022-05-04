@@ -101,5 +101,26 @@ export default {
     margin-top: 30px;
   }
 
+  @include breakpoint(xxs-down) {
+
+    .direction_row {
+      flex-direction: column;
+    }
+
+    form {
+      .row {
+        margin: 0;
+
+        .input-container__textarea,
+        .input-container__text {
+          width: 100%;
+          margin-top: 30px;
+        }
+
+      }
+    }
+
+  }
+
 }
 </style>

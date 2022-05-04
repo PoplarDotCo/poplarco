@@ -13,9 +13,7 @@
             <p class="isH6">Each one of us can become pioneers.</p>
           </div>
         </div>
-        <div class="div-right">
-          <img src="~/assets/img/compost.png" alt="">
-        </div>
+        <div class="div-right"></div>
       </div>
     </div>
   </section>
@@ -31,12 +29,9 @@ export default {
 #about-us {
   width: 100%;
 
-  .row {
-
-  }
   .div-left {
-
     flex: 2;
+    padding-right: 30px;
 
     .content {
       max-width: 600px;
@@ -47,10 +42,27 @@ export default {
   .div-right {
     flex: 1;
     text-align: right;
+    background: #fff url('~assets/img/compost.png') no-repeat top;
+    background-size: cover;
+    border-radius: $borderRadius;
+  }
 
+  @include breakpoint(xxs-down) {
 
-    img {
-      border-radius: $borderRadius;
+    .direction_row {
+      flex-direction: column-reverse;
+
+      .div-left {
+        padding: 0;
+      }
+
+      .div-right {
+        flex: auto;
+        height: 300px;
+        width: 100%;
+        background-position: center;
+        margin-bottom: 30px;
+      }
 
     }
 

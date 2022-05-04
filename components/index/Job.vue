@@ -13,9 +13,9 @@
       <h6>Learn More:</h6>
 
       <div class="row direction_row">
-        <a :href="linkedIn" class="button button_sm" target="_blank" v-if="linkedIn">LinkedIn</a>
-        <a :href="angelList" class="button button_sm" target="_blank" v-if="angelList">Angel List</a>
-        <nuxt-link to="#contact-us" class="button button_sm" v-if="angelList">Contact Us</nuxt-link>
+        <a :href="linkedIn" class="button button_sm button_dark" target="_blank" v-if="linkedIn">LinkedIn</a>
+        <a :href="angelList" class="button button_sm button_dark" target="_blank" v-if="angelList">Angel List</a>
+        <nuxt-link to="#contact-us" class="button button_sm button_dark" v-if="angelList">Contact Us</nuxt-link>
       </div>
     </div>
   </div>
@@ -69,6 +69,14 @@ export default {
 
   a {
     margin: 20px 30px 0 0;
+  }
+
+  @media screen and (max-width: 640px) {
+
+    .direction_row {
+      flex-direction: column;
+    }
+
   }
 
 }

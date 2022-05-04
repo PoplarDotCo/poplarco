@@ -33,13 +33,23 @@ export default {
   },
   data() {
     return {
-      navClosed: false,
+      navClosed: true,
     }
   },
   methods: {
     toggleNav() {
       this.navClosed = !this.navClosed;
-    }
+      this.freezeUnfreezeBody();
+    },
+    freezeUnfreezeBody() {
+      if(this.navClosed) {
+        document.getElementById('poplar').remove('no-scroll');
+      }
+
+      if (!this.navClosed) {
+        document.getElementById('poplar').add('no-scroll');
+      }
+    },
   }
 }
 </script>
@@ -120,7 +130,7 @@ nav {
 
     }
 
-    @include breakpoint(xs-up) {
+    @include breakpoint(sm-up) {
 
       display: none;
 
@@ -175,4 +185,10 @@ nav {
 
 }
 
+</style>
+
+<style>
+.no-scroll {
+  overflow: hidden;
+}
 </style>

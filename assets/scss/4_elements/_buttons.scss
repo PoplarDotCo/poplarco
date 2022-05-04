@@ -19,6 +19,7 @@ button,
   transition: $transitionIn;
   opacity: 1;
   border-radius: $borderRadius;
+  text-align: center;
 
   &:hover {
     background: $colorPrimary04;
@@ -28,10 +29,33 @@ button,
   }
 }
 
-.button_sm {
-  padding: 15px 25px;
-}
+.button {
 
-.button_lg {
-  padding: 25px 35px;
+  &_sm,
+  &_sm:active,
+  &_sm:focus,
+  &_sm:visited {
+    padding: 15px 25px;
+  }
+
+  &_lg,
+  &_lg:active,
+  &_lg:focus,
+  &_lg:visited {
+    padding: 25px 35px;
+  }
+
+  &_dark,
+  &_dark:visited,
+  &_dark:active,
+  &_dark:focus {
+    background: $colorPrimary03;
+    border: $colorPrimary03;
+  }
+
+  &_dark:hover {
+    background: $colorPrimary04;
+    border: $colorPrimary04;
+  }
+
 }
