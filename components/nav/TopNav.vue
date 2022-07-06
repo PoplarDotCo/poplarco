@@ -50,6 +50,16 @@ export default {
         document.getElementById('poplar').add('no-scroll');
       }
     },
+    spin(times_spun) {
+      // do something using times_spun
+    },
+    jumpingjack() {},
+    jump(distance, times_spun) {
+      // use distance for jump dist
+
+      this.spin(times_spun)
+      this.jumpingjack()
+    }
   }
 }
 </script>

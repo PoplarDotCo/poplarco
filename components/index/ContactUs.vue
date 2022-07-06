@@ -6,24 +6,34 @@
         <p class="isH4">Be the first one to know when we make the news or have new releases</p>
       </div>
 
+      <div class="submitting" v-show="submitting">
+        Submitting Form
+      </div>
+
+      <div class="submitted" v-show="isSubmitted">
+        Thank you for reaching out, we will get back to you soon! :)
+      </div>
+
+
+
       <form
         v-show="!isSubmitted"
-        @submit.prevent="validate"
+        @submit.prevent="onSubmit"
       >
         <fieldset>
           <div class="row direction_row">
 
             <div class="input-container__text name">
               <label for="name">Name <sup>*</sup></label>
-              <input type="text" id="name" v-bind="name" required @blur="touch('name')">
+              <input type="text" id="name" v-model.trim="name" required @blur="touch('name')">
               <div class="error" v-if="nameTouched && !name">Field is required</div>
             </div>
 
             <div class="input-container__text email">
               <label for="email">Email <sup>*</sup></label>
-              <input type="text" id="email" v-bind="email" required @blur="touch('email')">
+              <input type="text" id="email" v-model.trim="email" required @blur="touch('email')">
               <div class="error" v-if="emailTouched && !email">Field is required</div>
-              <div class="error" v-if="emailTouched && !emailValidated">This is not a valid email</div>
+              <div class="error" v-if="$v.country.$error">This is not a valid email</div>
             </div>
 
           </div>
@@ -32,13 +42,13 @@
 
             <div class="input-container__text town">
               <label for="town">Town <sup>*</sup></label>
-              <input type="text" id="town" v-bind="town" required @blur="touch('town')">
+              <input type="text" id="town" v-model.trim="town" required @blur="touch('town')">
               <div class="error" v-if="townTouched && !town">Field is required</div>
             </div>
 
             <div class="input-container__text country">
-              <label for="country">Country <sup>*</sup></label>
-              <input type="text" id="country" v-bind="country" required @blur="touch('country')">
+              <label for="country">Country<sup>*</sup></label>
+              <input type="text" id="country" v-model.trim="country" required @blur="touch('country')">
               <div class="error" v-if="countryTouched && !country">Field is required</div>
             </div>
 
@@ -48,7 +58,7 @@
 
             <div class="input-container__textarea message">
               <label for="message">Message (Optional)</label>
-              <textarea cols="30" rows="4" id="message" v-bind="message"></textarea>
+              <textarea cols="30" rows="4" id="message" v-model.trim="message"></textarea>
             </div>
 
           </div>
@@ -67,6 +77,10 @@
 </template>
 
 <script>
+import { reactive, computed } from "@nuxtjs/composition-api"
+import useVuelidate from '@vuelidate/core'
+import { required, email, alpha } from '@vuelidate/validators'
+
 export default {
   name: "ContactUs",
   data() {
@@ -85,6 +99,19 @@ export default {
       error: false,
     }
   },
+  validations: {
+    name: {
+      required,
+      alpha
+    },
+    email: {
+      required,
+      email,
+    },
+    town: {},
+    country: {},
+    message: {},
+  },
   methods: {
     touch(field) {
       if (field === 'name') {
@@ -102,15 +129,15 @@ export default {
       if (field === 'country') {
         this.countryTouched = true;
       }
-
     },
-    validate() {
-
+    async onSubmit() {
+      this.form.$touch()
+      const valid = await this.form.$validate()
+      if (valid) {
+        // do stuff
+      }
     },
-    emailValidated() {
-
-    },
-  }
+  },
 }
 </script>
 

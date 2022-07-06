@@ -45,7 +45,8 @@ export default {
     // https://github.com/storyblok/storyblok-nuxt
     [
       "@storyblok/nuxt/module",
-      { accessToken: "76Rkcs9ACYXy1OunSO1U6gtt" }
+      { accessToken: "76Rkcs9ACYXy1OunSO1U6gtt" },
+      "@vuelidate"
     ],
   ],
 
