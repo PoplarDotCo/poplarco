@@ -30,6 +30,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {src: '~/plugins/Vuelidate', ssr: false}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -46,7 +47,6 @@ export default {
     [
       "@storyblok/nuxt/module",
       { accessToken: "76Rkcs9ACYXy1OunSO1U6gtt" },
-      "@vuelidate"
     ],
   ],
 
